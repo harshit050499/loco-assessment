@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  flask-app
+  namespace: loco
+  labels:
+    name:  flask-app
+spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        app: flask-app
+    template:
+      metadata:
+        labels:
+          app: flask-app
+    
+      spec:
+        containers:
+        - name:  flask-app
+          image:  harshit05/flask_app
+          ports:
+          - containerPort:  80
+          resources:
+            requests:
+              memory: "10Mi"
+              cpu: "5m"
+            limits:
+              memory: "30Mi"
+              cpu: "10m"

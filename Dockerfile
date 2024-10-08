@@ -6,8 +6,8 @@ COPY app.py .
 
 FROM python:3.11-alpine
 WORKDIR /app
-COPY --from=BUILD /usr/local/lib/python3.11/ /usr/local/lib/python3.11/
-COPY --from=BUILD /app/app.py .
+COPY --from=build /usr/local/lib/python3.11/ /usr/local/lib/python3.11/ 
+COPY --from=build /app/app.py .
 EXPOSE 80
 ENTRYPOINT ["python","app.py"]
 

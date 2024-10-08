@@ -75,7 +75,7 @@ kubectl apply -f service.yaml -n loco
 kubectl apply -f autoscale.yaml
 
 ``` 
-![Google Drive Image](https://drive.google.com/uc?export=view&id=1r90g_2xOt2I9i0asJCGarL43qgcJxX10)
+![Google Drive Image](https://drive.google.com/uc?export=view&id=14cEI-YIV3WyWB-Oz4BFmbJm7FxGrSgBy)
 
 ### Step 9 : Accesing the application
 The application can be accessed from the browser at 
@@ -87,7 +87,7 @@ The application can be accessed from the browser at
 ## Note : 
 For automatically deploying everything just run the script :
 ```
-git clone https://
+git clone https://github.com/harshit050499/loco-assessment.git
 /bin/sh auto_deploy.sh
 
 ```
